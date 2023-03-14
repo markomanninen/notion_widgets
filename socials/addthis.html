@@ -25,11 +25,14 @@
 	<!-- AddThis share buttons -->
 	<div class="addthis_inline_share_toolbox"></div>
 	<!-- Custom script to set URL, title, and description -->
-	<script>
-	  var addthis_config = addthis_config || {};
-	  addthis_config.url = parentUrl;
-	  addthis_config.title = parentTitle;
-	  addthis_config.description = parentDescription;
+	<script type="text/javascript">
+	var addthis_share = {
+	   url: parentUrl,
+	   title: parentTitle,
+	   description: parentDescription,
+	   //media: ""
+	}
+	alert(addthis_share);
 	</script>
 </body>
 </html>
