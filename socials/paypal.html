@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Paypal Donate Button</title>
-</head>
-<body>
-	<form action="https://www.paypal.com/donate" method="post" target="_blank">
-		<input type="hidden" name="hosted_button_id" value="F94QB2VTPNP3L" />
-		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-		<img alt="" border="0" src="https://www.paypal.com/en_FI/i/scr/pixel.gif" width="1" height="1" />
-	</form>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .btn {
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: 'Quicksand', Helvetica, Century Gothic, sans-serif !important;
+        text-shadow: none;
+        font-weight: 700 !important;
+        font-size: 14px !important;
+        border-radius: 7px;
+        box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+        width: 187px;
+        display: flex
+      }
 
-</body>
+      .btn i {
+        animation: kofi-wiggle 3s infinite;
+      }
+
+      @keyframes kofi-wiggle {
+        0% {
+          transform: rotate(0) scale(1)
+        }
+
+        60% {
+          transform: rotate(0) scale(1)
+        }
+
+        75% {
+          transform: rotate(0) scale(1.12)
+        }
+
+        80% {
+          transform: rotate(0) scale(1.1)
+        }
+
+        84% {
+          transform: rotate(-10deg) scale(1.1)
+        }
+
+        88% {
+          transform: rotate(10deg) scale(1.1)
+        }
+
+        92% {
+          transform: rotate(-10deg) scale(1.1)
+        }
+
+        96% {
+          transform: rotate(10deg) scale(1.1)
+        }
+
+        100% {
+          transform: rotate(0) scale(1)
+        }
+      }
+
+      /* Darker background on mouse-over */
+      .btn:hover {
+        opacity: .85;
+        color: #f5f5f5 !important;
+        text-decoration: none !important
+      }
+    </style>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css">
+  </head>
+  <body style="margin: 0; padding: 0">
+    <div style="margin: 0 auto; max-width:400px;">
+      <form action="https://www.paypal.com/donate" method="post" target="_blank" style="float: left;margin-bottom:5px">
+        <input type="hidden" name="hosted_button_id" value="F94QB2VTPNP3L" />
+        <div class="btn-container">
+          <button class="btn">
+            <i class="fa fa-donate"></i> &nbsp;Donate via PayPal </button>
+        </div>
+        <img alt="" border="0" src="https://www.paypal.com/en_FI/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+      <script type='text/javascript'>
+        kofiwidget2.init('Support Me via Ko-fi', 'DodgerBlue', 'F1F8JHA7O');
+        kofiwidget2.draw();
+      </script>
+    </div>
+  </body>
 </html>
