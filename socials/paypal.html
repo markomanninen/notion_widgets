@@ -3,6 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+      .btn-container a {
+        text-decoration: none;
+      }
       .btn {
         background-color: DodgerBlue;
         border: none;
@@ -72,20 +75,26 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css">
   </head>
   <body style="margin: 0; padding: 0">
-    <div style="margin: 0 auto; max-width:400px;">
+    <div style="margin: 0 auto; max-width:575px;">
       <form action="https://www.paypal.com/donate" method="post" target="_blank" style="float: left;margin-bottom:5px">
         <input type="hidden" name="hosted_button_id" value="F94QB2VTPNP3L" />
         <div class="btn-container">
           <button class="btn">
-            <i class="fa fa-donate"></i> &nbsp;Donate via PayPal </button>
+            <i class="fa fa-donate"></i> &nbsp;&nbsp;Donate via PayPal </button>
         </div>
         <img alt="" border="0" src="https://www.paypal.com/en_FI/i/scr/pixel.gif" width="1" height="1" />
       </form>
+      <div style="float: left;margin-right: 5px">
       <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
       <script type='text/javascript'>
         kofiwidget2.init('Support Me via Ko-fi', 'DodgerBlue', 'F1F8JHA7O');
         kofiwidget2.draw();
       </script>
+      </div>
+      <div class="btn-container">
+          <a href="https://patreon.com/mesokosmos" target="_blank"><button class="btn" style="height:40px;">
+            <i class="fa"><img style="width:18px;height:18px;" src="https://static-00.iconduck.com/assets.00/patreon-icon-512x512-vwrifkrr.png"/></i> &nbsp;&nbsp;Become a Patron</button></a>
+        </div>
     </div>
   </body>
 </html>
